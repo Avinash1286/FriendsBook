@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".ActivitySetting">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingTool"
+            android:background="#4caf50"
+            app:title="Account Setting"
+            ></android.support.v7.widget.Toolbar>
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/settingTool"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/set_profile"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:focusedByDefault="false"
+              android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:id="@+id/set_pofile_status"
+            android:layout_below="@id/set_profile"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+                android:hint="Profile Status"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:paddingBottom="10dp"
+            android:id="@+id/set_pofile_username"
+            android:layout_below="@id/set_pofile_status"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Username"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/set_pofile_Fullname"
+            android:layout_below="@id/set_pofile_username"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:hint="Fullname"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:id="@+id/set_pofile_status_country"
+            android:layout_below="@id/set_pofile_Fullname"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Country"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:id="@+id/gender"
+            android:layout_below="@id/set_pofile_status_country"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Gender"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/dateofbirth"
+            android:textColor="#000"
+            android:layout_below="@id/gender"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Date of birth"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backinput"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/relation"
+            android:textColor="#000"
+            android:layout_below="@id/dateofbirth"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="RelationShip Status"
+            android:textColorHint="#515151"
+            android:paddingLeft="30dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relation"
+            android:layout_margin="20dp"
+            android:background="@drawable/backlog"
+            android:textColor="#fff"
+            android:text="Update Your Profile"
+            android:textSize="20sp"
+            android:id="@+id/update_profile"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

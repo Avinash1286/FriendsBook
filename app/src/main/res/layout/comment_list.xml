@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin1"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin2"
+            android:orientation="horizontal">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="50dp"
+               android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="50dp"
+                android:id="@+id/profilepiconcomment"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernameOfComment"
+                android:layout_marginTop="15dp"
+                android:text="UserName"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentOfComment"
+                android:text="Commented On:"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#727171"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateOfComment"
+                android:text="Date:"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#727171"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentTextoncomment"
+            android:layout_marginLeft="60dp"
+            android:textColor="#000"
+            android:text="Comment will be display here..."
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeofcomment"
+            android:text="12:45"
+            android:textColor="#363636"
+            android:textSize="15dp"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

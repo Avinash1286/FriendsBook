@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFriends">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/findTool"
+        android:background="#4caf50"
+        app:title="Find Your Friends"
+        ></android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_below="@id/findTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletext"
+        android:textStyle="bold"
+        android:text="Search Your Friends by their name.."
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchText"
+            android:hint="Search"
+            android:layout_below="@id/titletext"
+            android:background="@drawable/backinput"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:textColorHint="#fff"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startSearch"
+            android:layout_toEndOf="@id/searchText"
+            android:layout_below="@id/titletext"
+            android:background="@drawable/backinput"
+            android:text="Search"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchList"
+        android:layout_below="@id/searchText"
+        ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

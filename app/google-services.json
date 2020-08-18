@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "887849655625",
+    "firebase_url": "https://friendbook-65167.firebaseio.com",
+    "project_id": "friendbook-65167",
+    "storage_bucket": "friendbook-65167.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887849655625:android:e1114f8f609acaee",
+        "android_client_info": {
+          "package_name": "com.example.friendbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887849655625-f598qn2pskfqcgelsl6h9t0ljtj6o6ll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.friendbook",
+            "certificate_hash": "60ba2c7824cf4364a05256c26c7d4375635191e6"
+          }
+        },
+        {
+          "client_id": "887849655625-s72425ag7fl95o8oqio3eeu0bcbgclmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWla20SCWeXRdswiKfn_E6f35pznjZTfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887849655625-s72425ag7fl95o8oqio3eeu0bcbgclmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

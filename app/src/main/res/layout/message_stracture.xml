@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile"
+        android:id="@+id/chartingprofile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chartingReceiverText"
+        android:layout_toEndOf="@id/chartingprofile"
+        android:layout_marginStart="10dp"
+        android:text="Message Receiver"
+        android:background="@drawable/receiver_message_back"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_alignBottom="@id/chartingprofile"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chartingSenderText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:text="Message Sender"
+        android:background="@drawable/sender_message_back"
+          android:layout_marginEnd="10dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_alignBottom="@id/chartingprofile"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E7E5E5"
+    android:layout_height="match_parent"
+    tools:context=".ChartActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chartTool"
+        android:background="#54E45A"
+        ></android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chartRecycle"
+        android:layout_above="@id/bottomContainer"
+        android:layout_below="@id/chartTool"
+        ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomContainer"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/ic_select_image"
+            android:layout_height="50dp"
+            android:id="@+id/sendImageMessage"
+            />
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="260dp"
+            android:hint="write a message..."
+            android:textColor="#000"
+            android:textColorHint="#747272"
+            android:layout_height="wrap_content" />
+
+<Button
+    android:layout_width="50dp"
+    android:id="@+id/sendTextmessage"
+    android:background="@drawable/ic_send_message"
+    android:layout_height="50dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

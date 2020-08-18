@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/login"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logo"
+        />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000"
+        android:layout_below="@id/logo"
+        android:background="@drawable/backinput"
+        android:padding="5dp"
+        android:hint="Email"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/email"
+     android:textColorHint="#797777"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/emailText"
+        android:background="@drawable/backinput"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:hint="Password..."
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/password"
+     android:textColorHint="#807E7E"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/confText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/passText"
+        android:background="@drawable/backinput"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:hint="Confirm Password..."
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/password"
+                android:textColorHint="#8F8E8E"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confText"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/backlog"
+        android:text="Create An Account"
+        android:textSize="25dp"
+        android:id="@+id/butcreatAccount"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        />
+
+    </RelativeLayout>
+</ScrollView>
